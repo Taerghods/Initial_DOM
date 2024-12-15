@@ -6,17 +6,22 @@
     <link rel="stylesheet" href="./src/dist/style.css">
     <title>Todo</title>
 </head>
-<body class="font-sans h-full mx-auto bg-gray-100">
-    <section class="mx-auto flex justify-center">
-        <header id="header" class="w-[50%] grid grid-rows-2 justify-center items-center gap-y-10">
-            <div>
-                <h1 class="text-[#b83f45] font-semibold text-8xl italic pt-10">todo</h1>
-            </div>
-            <div class="border box-border">
-                <input id="todo-input" type="text" placeholder="What needs to be done?" >
-            </div>
-        </header>
-    </section>
+<body class="font-sans h-full mx-auto bg-gray-200">
+    <div id="header" class="mx-auto flex justify-center items-center">
+        <div id="myDIV">
+            <h1 class="text-[#b83f45] font-semibold text-8xl italic pt-10">todo</h1>
+            <input type="text" id="myInput" placeholder="What needs to be done?" class="border shadow-md">
+            <span onclick="newElement()" class="addBtn border shadow-sm">Add</span>
+            <ul id="myUL" class="bg-white">
+            <li>html</li>
+            <li class="checked">Python</li>
+            <li>tailwind</li>
+            <li>sql</li>
+            <li>javaScript</li>
+            <li>Django</li>
+            </ul>
+        </div>
+    </div>
 </body>
 <script src="src/js/script.js"></script>
 </html>
