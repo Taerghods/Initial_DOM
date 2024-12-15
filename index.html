@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/dist/style.css">
-    <title>Document</title>
+    <title>Todo</title>
 </head>
-<body class="font-sans h-full m-auto">
-    <div class="container relative mx-auto lg:px-40">
-<!-- Header -->
-        <header class="grid grid-cols-2 grid-flow-row gap-x-10 justify-center items-center my-10">
-            <div class="flex items-center gap-3">
-                <span class="logo_blue">T</span>
-                <span class="font-bold text-2xl">Trafalgar<span>
+<body class="font-sans h-full mx-auto bg-gray-100">
+    <section class="mx-auto flex justify-center">
+        <header id="header" class="w-[50%] grid grid-rows-2 justify-center items-center gap-y-10">
+            <div>
+                <h1 class="text-[#b83f45] font-semibold text-8xl italic pt-10">todo</h1>
+            </div>
+            <div class="border box-border">
+                <input id="todo-input" type="text" placeholder="What needs to be done?" >
             </div>
         </header>
-    </div>
+    </section>
 </body>
 <script src="src/js/script.js"></script>
 </html>
