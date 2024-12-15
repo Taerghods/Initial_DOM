@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+    @layer components{
+        .logo_blue{
+            @apply bg-blue-400 rounded-full text-white text-2xl font-bold w-10 h-10 flex justify-center items-center
+         }
+    }
