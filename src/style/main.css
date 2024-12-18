@@ -2,9 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-    @layer components{
-        .logo_blue{
-            @apply bg-blue-400 rounded-full text-white text-2xl font-bold w-10 h-10 flex justify-center items-center
-         }
+@layer components{
+    
+    .list_item{
+        @apply flex justify-between items-center border-e-white border-solid shadow-md rounded-xl  mb-4 p-2
     }
+};
