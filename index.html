@@ -6,21 +6,80 @@
     <link rel="stylesheet" href="./src/dist/style.css">
     <title>Todo</title>
 </head>
-<body class="font-sans h-full mx-auto bg-gray-200">
-    <div id="header" class="mx-auto flex justify-center items-center">
-        <div id="myDIV">
-            <h1 class="text-[#b83f45] font-semibold text-8xl italic pt-10">todo</h1>
-            <input type="text" id="myInput" placeholder="What needs to be done?" class="border shadow-md">
-            <span onclick="newElement()" class="addBtn border shadow-sm">Add</span>
-            <ul id="myUL" class="bg-white">
-            <li>html</li>
-            <li class="checked">Python</li>
-            <li>tailwind</li>
-            <li>sql</li>
-            <li>javaScript</li>
-            <li>Django</li>
+<body>
+    <div class="container font-sans h-full mx-auto w-[500px] bg-gray-200">
+        <section class="grid grid-flow-row-dense justify-center items-center my-4">         
+            <header>
+                <h1 class="text-violet-600 font-semibold text-5xl italic px-4 pt-4">ToDo List</h1>
+                <hr/>
+            </header>           
+            <form id="form_id" class="py-4">
+                <div class="grid grid-row-3 justify-center items-center gap-y-4">
+                    <label for="input_id" class="italic">Enter Item:</label>
+                    <input type="text" id="input_id" class="rounded-xl border shadow-md p-2"/>
+                    <div id="inpu_invalid_id" class="text-[#b83f45]"></div>
+                </div>
+                <div class="flex justify-center py-4">
+                    <button type="submit" id="btn_sub_id" class="rounded-md bg-green-500 text-white px-2">+ Add Item</button>
+                </div>
+            </form>
+            <div>
+                <input type="text" id="filter_id" placeholder="Search Item" class="rounded-xl border shadow-md p-2"/>
+            </div>
+            <ul id="list_id" class="my-4 px-2">
+                <li class="list_item">
+                    item 1
+                    <button class="p-2 bg-[#b83f45] text-white rounded hover:bg-red-600">  
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">  
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />  
+                        </svg>  
+                      </button> 
+                </li>
+                <li class="list_item">
+                    item 2
+                    <button class="p-2 bg-[#b83f45] text-white rounded hover:bg-red-600">  
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">  
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />  
+                        </svg>  
+                      </button> 
+                </li>
+                <li class="list_item">
+                    item 3
+                    <button class="p-2 bg-[#b83f45] text-white rounded hover:bg-red-600">  
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">  
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />  
+                        </svg>  
+                      </button> 
+                </li>
+                <li class="list_item">
+                    item 4
+                    <button class="p-2 bg-[#b83f45] text-white rounded hover:bg-red-600">  
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">  
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />  
+                        </svg>  
+                      </button> 
+                </li>
+                <li class="list_item">
+                    item 5
+                    <button class="p-2 bg-[#b83f45] text-white rounded hover:bg-red-600">  
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">  
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />  
+                        </svg>  
+                      </button> 
+                </li>
+                <li class="list_item">
+                    item 6
+                    <button class="p-2 bg-[#b83f45] text-white rounded hover:bg-red-600">  
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">  
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />  
+                        </svg>  
+                      </button> 
+                </li>              
             </ul>
-        </div>
+            <div class="flex justify-center py-3">
+                <button type="submit" id="btn_del_id" class="rounded-md bg-[#b83f45] text-white px-6">Clear All</button>
+            </div>
+        </section>
     </div>
 </body>
 <script src="src/js/script.js"></script>
